@@ -287,7 +287,7 @@
                         <h4>FAQs</h4>
                         <ul>
                             <h4>Reservations</h4>
-                            <li>We prefer at least 72hrs in advance but we can work with you for any last minute events.</li>
+                            <li>We prefer 2 weeks in advance but we can work within 72 hrs notice. </li>
 
                         </ul>
                         <ul>
@@ -297,7 +297,7 @@
 
                         <ul>
                             <h4>Cancellation</h4>
-                            <li>If you need to cancel your event, you will need to cancel 10 days in advance in order to receive a full refund of your deposit. Anything after 10 days reservation deposit will not be refunded.</li>
+                            <li>If you need to cancel your event, you will need to cancel 10 days in advance in order to receive a full refund of your deposit. After 10 days reservation deposit will not be refunded.</li>
                             <!-- <li>If you need to cancel within the 72-hour window leading up to the event, we will refund you 50% of your purchase price.</li> -->
                         </ul>
                         <ul>
@@ -335,8 +335,7 @@
                                                     <label for="firstname"><h3> Name:</h3></label>
                                                     <input id="firstname" type="text" name="Name" class="form-control" required><br>
 
-                                                    <!-- <label for="lastname">Last Name</label>
-                                                    <input id="lastname" type="text" name="Last name" class="form-control" required><br> -->
+
 
                                                     <label for="email"><h3>Email:</h3></label>
                                                     <input id="email" type="text" name="Email" class="form-control" required><br>
@@ -344,72 +343,88 @@
                                                     <label for="email"><h3>Phone Number:</h3></label>
                                                     <input id="cxphone" type="text" name="Customer Phone#" maxlength="12" class="form-control" required><br>
 
-                                                    <label for="start"><h3>Date:</h3></label>
-                                                    <input type="date" id="start" name="Date" value="" required>
+                                                    <br/>
+                                                    <label for="appt"><h3>Choose a date and time for your Picnic:</h3></label>
+                                                    </br>
+                                                    <small>**Office hours are 9am to 6pm. Please see available date and time in 📅 </small>
+                                                    </br><br>
                                                     <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=OXJxczgzMm9kYmdkdW1uNzR2cjV2Y2c3aDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23795548&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
                                                         style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
                                                     </br><br/>
-                                                    <small>**Office hours are 9am to 6pm. Please see available time in 📅 </small>
+
+
+
+                                                    <label for="start"><h3>Date:</h3></label> <br>
+                                                    <input type="date" id="start" name="Date" value="" required>
+                                                    <br><br>
+
+                                                    <label for="start"><h3>Time:</h3></label><br>
+                                                    <input type="time" id="appt" name="Picnic_Time" min="09:00" max="18:00" required>
+
+                                                    <select name="Time_of_day" id='time' required>
+                                                        <option value="">- Select -</option>
+                                                        <option value='AM'> AM</option>
+                                                        <option value='PM'> PM</option>
+                                                        </select>
+
+
                                                     </br><br/>
-                                                    <label for="appt"><h3>Choose a time for your Picnic:</h3></label></br>
-                                                    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-
-                                                    <input type="checkbox" id="am" name="Picnic Time" value="AM">
-                                                    <label for="appt">AM</label>
-                                                    <input type="checkbox" id="pm" name="Picnic Time" value="PM">
-                                                    <label for="appt">PM</label>
-
-                                                    </br><br/>
-
                                                     <h3>Picnic Selection:</h3>
-                                                    <input type="checkbox" id="Bohemian" name="Picnic Type" value="Bohemian $275">
-                                                    <label for="Bohemian"> Bohemian $275 for 2 1/2Hrs</label><br>
+                                                    <select name="Bohemian" id='Bohemian' required>
+                                                        <option value="">- Select Picnic Duration -</option>
+                                                        <option value='Bohemian $275'> Bohemian $275 for 2 1/2Hrs</option>
+                                                        <option value='Bohemian $300'> Bohemian $300 for 3Hrs</option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Bohemian" name="Picnic Type" value="Bohemian $300">
-                                                    <label for="Bohemian"> Bohemian $300 for 3Hrs</label><br>
-
-                                                    </br>
 
                                                     <h3>Guests:</h3>
-                                                    <input type="checkbox" id="Guests" name="Guests" value="Guests 2">
-                                                    <label for="Guests"> 2 </label><br>
+                                                    <select name="Guests" id='Guests' required>
+                                                        <option value="">- Select Number of Guests -</option>
+                                                        <option value='1 Guest'> 1 Guest</option>
+                                                        <option value='2 Guests'> 2 Guests</option>
+                                                        <option value='3 Guest'> 3 Guests</option>
+                                                        <option value='4 Guests'> 4 Guests</option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Guests" name="Guests" value="Guests 4">
-                                                    <label for="Guests"> 4 </label><br>
 
-                                                    </br>
                                                     <h3>Pick a Spot:</h3>
-                                                    <h3>Indoor:</h3>
-                                                    <input type="checkbox" id="Indoor" name="Indoor" value="Living Room">
-                                                    <label for="Indoor"> Living Room </label><br>
+                                                    <input type="checkbox" id="Indoor" name="Indoor" value="Yes">
+                                                    <label for="Indoor"> Indoor </label><br>
 
-                                                    <input type="checkbox" id="Indoor" name="Indoor" value="Rented space">
-                                                    <label for="Indoor"> Rented space (party room, restaurant, studio) </label><br>
+                                                    <select name="Indoor_Location" id='Indoor'>
+                                                        <option value="None">- Select Indoor Spot -</option>
+                                                        <option value='Living Room '> Living Room </option>
+                                                        <option value='Rented space party room'> Party Room</option>
+                                                        <option value='Rented space restaurant'> Restaurant</option>
+                                                        <option value='Rented space studio'> Studio</option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <h3>Outdoor:</h3>
-                                                    <input type="checkbox" id="Outdoor" name="Outdoor" value="Public Park">
-                                                    <label for="Outdoor"> Public Park </label><br>
+                                                    <input type="checkbox" id="Outdoor" name="Outdoor" value="Yes">
+                                                    <label for="Outdoor"> Outdoor </label><br>
 
-                                                    <input type="checkbox" id="Outdoor" name="Outdoor" value="Public Beach">
-                                                    <label for="Outdoor"> Public Beach </label><br>
+                                                    <select name="Outdoor_Location" id='Outdoor'>
+                                                        <option value="None">- Select Outdoor Spot -</option>
+                                                        <option value='Public Park'> Public Park</option>
+                                                        <option value='Public Beach'> Public Beach</option>
+                                                        <option value='Backyard/Patio'> Backyard/Patio</option>
+                                                        <option value='Balcony/Terrace'> Balcony/Terrace</option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Outdoor" name="Outdoor" value="Backyard/Patio">
-                                                    <label for="Outdoor"> Backyard/Patio </label><br>
 
-                                                    <input type="checkbox" id="Outdoor" name="Outdoor" value="Balcony/Terrace">
-                                                    <label for="Outdoor"> Balcony/Terrace </label><br>
-                                                    </br>
 
                                                     <h3>Extra Hour:</h3>
-                                                    <input type="checkbox" id="ExtraHour" name="Extra Hour" value="Extra 1Hr">
-                                                    <label for="ExtraHour"> 1Hr Extra</label><br>
+                                                    <select name="Extra_Hour" id='hr'>
+                                                        <option value="None">- Select Extra Hr -</option>
+                                                        <option value='1hr'> 1 extra hour $50</option>
+                                                        <option value='2hrs'> 2 extra hour $100</option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="ExtraHour" name="Extra Hour" value="Extra 2Hr">
-                                                    <label for="ExtraHour"> 2Hrs Extra</label><br>
-
-                                                    <input type="checkbox" id="ExtraHour" name="Extra Hour" value="None">
-                                                    <label for="ExtraHour"> None</label>
-                                                    <br></br>
+                                                    <br>
 
 
                                                     <!-- <p class="price">$</p> -->
@@ -417,47 +432,275 @@
                                                         <p class="mb-0"><em>Available ADD-ONS</em></p>
                                                     </blockquote>
 
-                                                    <input type="checkbox" id="Champagne" name="Champagne" value="Champagne">
-                                                    <label for="Champagne"> Champagne $25 per bottle </label><br>
+                                                    <input type="checkbox" id="Turkey" name="Turkey_Wraps" value="Yes">
+                                                    <label for="Turkey"> Turkey Wraps $15/each</label><br>
 
-                                                    <input type="checkbox" id="wine" name="Wine" value="Red Wine">
-                                                    <label for="wine"> Red Wine $20 per bottle</label><br>
+                                                    <select name="Quantity_Turkey" id='Quantity_Turkey'>
+                                                        <option value="None">- Select Number of &#x1F983; -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="wine" name="Wine" value="White Wine">
-                                                    <label for="wine"> White Wine $20 per bottle</label><br>
+                                                    <input type="checkbox" id="Mini" name="Mini_Cake" value="Yes">
+                                                    <label for="Mini"> Mini Custom Cake $35/each</label><br>
 
-                                                    <input type="checkbox" id="Turkey" name="Turkey" value="Turkey Wraps">
-                                                    <label for="Turkey"> Turkey Wraps $15</label><br>
+                                                    <select name="Quantity_Mini_Cake" id='Quantity_Cake'>
+                                                        <option value="None">- Select Number of Mini 🎂 -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Mini" name="Mini Cake" value="Mini Cake">
-                                                    <label for="Mini"> Mini Custome Cake $35</label><br>
+                                                    <input type="checkbox" id="Macaroons" name="Macaroons" value="Yes">
+                                                    <label for="Macaroons"> Macaroons (Made to order) Pack of 12 $20/each</label><br>
 
-                                                    <input type="checkbox" id="Macaroons" name="Macaroons" value="Macaroons">
-                                                    <label for="Macaroons"> Macaroons (Made to order) Pack of 12 $20</label><br>
+                                                    <select name="Quantity_Macaroons" id='Quantity_Macaroons'>
+                                                        <option value="None">- Select Number of Macaroons -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Fruit" name="Fruit" value="Fruit">
-                                                    <label for="Fruit"> Fruit Bowl $15</label><br>
+                                                    <input type="checkbox" id="Fruit" name="Fruit" value="Yes">
+                                                    <label for="Fruit"> Fruit Bowl $15/each</label><br>
 
-                                                    <input type="checkbox" id="Sushi" name="Sushi" value="Sushi Platter">
-                                                    <label for="Sushi"> Sushi Platter for 2-4 $55</label><br>
+                                                    <select name="Quantity_Fruit" id='Quantity_Fruit'>
+                                                        <option value="None">- Select Number of 🍇🍑 -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Bouquet" name="Bouquet" value="Bouquet Roses">
-                                                    <label for="Bouquet"> Bouquet of 24 (In season) Roses $60</label><br>
+                                                    <input type="checkbox" id="Sushi" name="Sushi" value="Yes">
+                                                    <label for="Sushi"> Sushi Platter for 2-4 $55/each</label><br>
 
-                                                    <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate Strawberries">
-                                                    <label for="Chocolate"> Chocolate Covered Strawberries pack of 8 $15</label><br>
+                                                    <select name="Quantity_Sushi" id='Quantity_Sushi'>
+                                                        <option value="None">- Select Number of 🍣 Platters -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
 
-                                                    <input type="checkbox" id="Charcuterie" name="Charcuterie" value="Charcuterie Board">
-                                                    <label for="Charcuterie"> Charcuterie Board for 2 $55</label><br>
 
-                                                    <input type="checkbox" id="Charcuterie" name="Vegan Charcuterie" value="Vegan Charcuterie Board">
-                                                    <label for="Charcuterie"> Vegan Charcuterie Board for 2 $55</label><br>
+                                                    <input type="checkbox" id="Chocolate" name="Chocolate_Covered_Strawberries" value="Yes">
+                                                    <label for="Chocolate"> Chocolate Covered Strawberries pack of 8 $15/each</label><br>
 
-                                                    <input type="checkbox" id="lettercake" name="Letter_Cake" value="Letter Cake">
+                                                    <select name="Quantity_Covered_Strawberries" id='Quantity_Covered_Strawberries'>
+                                                        <option value="None">- Select Number of Chocolate Covered 🍓 -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="Charcuterie" name="Charcuterie" value="Yes">
+                                                    <label for="Charcuterie"> Charcuterie Board for 2 $55/each</label><br>
+
+                                                    <select name="Quantity_Charcuterie" id='Quantity_Charcuterie'>
+                                                        <option value="None">- Select Number of Charcuterie Boards -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="Vegan" name="Vegan_Board" value="Yes">
+                                                    <label for="Vegan"> Vegan Board for 2 $55/each</label><br>
+
+                                                    <select name="Quantity_Vegan_Board" id='Quantity_Vegan'>
+                                                        <option value="None">- Select Number of Vegan Boards -</option>
+                                                        <option value='1'> 1 </option>
+                                                        <option value='2'> 2 </option>
+                                                        </select>
+                                                    <br><br>
+
+
+                                                    <input type="checkbox" id="Champagne" name="Champagne" value="Yes">
+                                                    <label for="Champagne"> Champagne $25 per bottle  </label><br>
+
+                                                    <select name="Champagne_Quantity" id='drink'>
+                                                        <option value="None">- Select Number of 🍾 Bottle -</option>
+                                                        <option value='1'> 1</option>
+                                                        <option value='2'> 2</option>
+                                                        <option value='3'> 3</option>
+                                                        <option value='4'>4</option>
+                                                        <option value='5'>5</option>
+                                                            </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="wine" name="Wine" value="Yes">
+                                                    <label for="wine"> Wine $20 per bottle</label><br>
+
+                                                    <select name="Wine_Type" id='drink'>
+                                                        <option value="None">- Select Type of 🍷 -</option>
+                                                        <option value='Red Wine'> Red Wine</option>
+                                                        <option value='White Wine'> White Wine</option>
+                                                        </select><br>
+                                                    <select name="Wine_Quantity" id='drink'>
+                                                        <option value="None">- Select Number of 🍷 Bottle -</option>
+                                                        <option value='1'> 1</option>
+                                                        <option value='2'> 2</option>
+                                                        <option value='3'> 3</option>
+                                                        <option value='4'>4</option>
+                                                        <option value='5'>5</option>
+                                                            </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="lettercake" name="Letter_Cake" value="Yes">
                                                     <label for="lettercake"> Letter Cake $100.00 </label><br>
 
-                                                    <input type="checkbox" id="numbercake" name="Number_cake" value="Number Cake">
+                                                    <select name="Letter_cake" id='Sweets'>
+                                                        <option value="None">- Select Cake Letter 🍰 -</option>
+                                                        <option value='A'> A</option>
+                                                        <option value='B'> B</option>
+                                                        <option value='C'> C</option>
+                                                        <option value='D'>D</option>
+                                                        <option value='E'> E</option>
+                                                        <option value='F'>F</option>
+                                                        <option value='G'> G</option>
+                                                        <option value='H'> H</option>
+                                                        <option value='I'> I</option>
+                                                        <option value='J'>J</option>
+                                                        <option value='K'>K</option>
+                                                        <option value='L'> L</option>
+                                                        <option value='M'> M</option>
+                                                        <option value='N'> N</option>
+                                                        <option value='O'>O</option>
+                                                        <option value='P'>P</option>
+                                                        <option value='Q'> Q</option>
+                                                        <option value='R'> R</option>
+                                                        <option value='S'> S</option>
+                                                        <option value='T'>T</option>
+                                                        <option value='U'>U</option>
+                                                        <option value='V'>V</option>
+                                                        <option value='W'>W</option>
+                                                        <option value='X'>X</option>
+                                                        <option value='Y'>Y</option>
+                                                        <option value='Z'>Z</option>
+                                                        </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="numbercake" name="Number_cake" value="Yes">
                                                     <label for="numbercake"> Number Cake $100.00 </label><br>
+
+                                                    <select name="Number_cake" id='Sweets'>
+                                                        <option value="None">- Select Cake Number 🍰 -</option>
+                                                        <option value='1'> 1</option>
+                                                        <option value='2'> 2</option>
+                                                        <option value='3'> 3</option>
+                                                        <option value='4'>4</option>
+                                                        <option value='5'>5</option>
+                                                        <option value='6'> 6</option>
+                                                        <option value='7'> 7</option>
+                                                        <option value='8'> 8</option>
+                                                        <option value='9'>9</option>
+                                                        <option value='10'>10</option>
+                                                        <option value='11'> 11</option>
+                                                        <option value='12'> 12</option>
+                                                        <option value='13'> 13</option>
+                                                        <option value='14'>14</option>
+                                                        <option value='15'>15</option>
+                                                        <option value='16'> 16</option>
+                                                        <option value='17'> 17</option>
+                                                        <option value='18'> 18</option>
+                                                        <option value='19'>19</option>
+                                                        <option value='20'>20</option>
+                                                        <option value='21'>21</option>
+                                                        <option value='22'>22</option>
+                                                        <option value='23'>23</option>
+                                                        <option value='24'>24</option>
+                                                        <option value='25'>25</option>
+                                                        <option value='26'> 26</option>
+                                                        <option value='27'> 27</option>
+                                                        <option value='28'> 28</option>
+                                                        <option value='29'>29</option>
+                                                        <option value='30'>30</option>
+                                                        <option value='31'> 31</option>
+                                                        <option value='32'> 32</option>
+                                                        <option value='33'> 33</option>
+                                                        <option value='34'>34</option>
+                                                        <option value='35'>35</option>
+                                                        <option value='36'> 36</option>
+                                                        <option value='37'> 37</option>
+                                                        <option value='38'> 38</option>
+                                                        <option value='39'>39</option>
+                                                        <option value='40'>40</option>
+                                                        <option value='41'> 41</option>
+                                                        <option value='42'> 42</option>
+                                                        <option value='43'> 43</option>
+                                                        <option value='44'>44</option>
+                                                        <option value='45'>45</option>
+                                                        <option value='46'>46</option>
+                                                        <option value='47'>47</option>
+                                                        <option value='48'>48</option>
+                                                        <option value='49'>49</option>
+                                                        <option value='50'>50</option>
+                                                        <option value='51'> 51</option>
+                                                        <option value='52'> 52</option>
+                                                        <option value='53'> 53</option>
+                                                        <option value='54'>54</option>
+                                                        <option value='55'>55</option>
+                                                        <option value='56'> 56</option>
+                                                        <option value='57'> 57</option>
+                                                        <option value='8'> 58</option>
+                                                        <option value='9'>59</option>
+                                                        <option value='60'>60</option>
+                                                        <option value='61'> 61</option>
+                                                        <option value='62'> 62</option>
+                                                        <option value='63'> 63</option>
+                                                        <option value='64'>64</option>
+                                                        <option value='65'>65</option>
+                                                        <option value='66'> 66</option>
+                                                        <option value='67'> 67</option>
+                                                        <option value='68'> 68</option>
+                                                        <option value='69'>69</option>
+                                                        <option value='70'>70</option>
+                                                        <option value='71'>71</option>
+                                                        <option value='72'>72</option>
+                                                        <option value='73'>73</option>
+                                                        <option value='74'>74</option>
+                                                        <option value='75'>75</option>
+                                                        <option value='76'> 76</option>
+                                                        <option value='77'> 77</option>
+                                                        <option value='78'> 78</option>
+                                                        <option value='79'>79</option>
+                                                        <option value='80'>80</option>
+                                                        <option value='81'> 81</option>
+                                                        <option value='82'> 82</option>
+                                                        <option value='83'> 83</option>
+                                                        <option value='84'>84</option>
+                                                        <option value='85'>85</option>
+                                                        <option value='86'> 86</option>
+                                                        <option value='87'> 87</option>
+                                                        <option value='88'> 88</option>
+                                                        <option value='89'>89</option>
+                                                        <option value='90'>90</option>
+                                                        <option value='91'> 91</option>
+                                                        <option value='92'> 92</option>
+                                                        <option value='93'> 93</option>
+                                                        <option value='94'>94</option>
+                                                        <option value='95'>95</option>
+                                                        <option value='96'>96</option>
+                                                        <option value='97'>97</option>
+                                                        <option value='98'>98</option>
+                                                        <option value='99'>99</option>
+                                                        <option value='100'>100</option>
+                                                        </select>
+                                                    <br><br>
+
+                                                    <input type="checkbox" id="Sweets" name="Assorted_Sweets_Box" value="Yes">
+                                                    <label for="Sweets"> Assorted Sweets Box </label><br>
+
+                                                    <select name="Assorted_Sweets_Box_Size" id='Sweets'>
+                                                        <option value="None">- Select Size 🧁 -</option>
+                                                        <option value='Small$20'> Sweets Box Small $20</option>
+                                                        <option value='Medium$35'> Sweets Box Medium $35</option>
+                                                        <option value='Large$80'> Sweets Box Large $80</option>
+                                                        </select>
+                                                    <br>
+                                                    <br>
+
+                                                    <input type="checkbox" id="Bouquet" name="Bouquet" value="Yes">
+                                                    <label for="Bouquet"> Bouquet of 24 (In season) Roses $60</label><br>
 
                                                     <input type="checkbox" id="AddONS" name="ADD ONS" value="None">
                                                     <label for="ADDONS"> None</label><br><br>
@@ -486,7 +729,7 @@
                                                     <img src="img/Macaroons2.JPEG" alt="" class="img-fluid image1">
                                                 </div>
                                                 <div class="text">
-                                                    <h3 class="h5">Macaroons</h3>
+                                                    <h3 class="h5">Large Assorted Sweet Box</h3>
                                                     <!-- <p class="price">$20</p>
                                     <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
                                                 </div>
@@ -610,22 +853,22 @@
                             <div class="col-lg-3">
                                 <ul class="list-inline photo-stream">
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/zulypic3.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/zulypic3.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/welcome.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/welcome.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/table.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/table.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/zulypic4.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/zulypic4.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/wine.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/wine.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#"><img src="img/picnictable.jpeg" alt="..." class="img-fluid"></a>
+                                        <a href="portfolio-3.html"><img src="img/picnictable.jpeg" alt="..." class="img-fluid"></a>
                                     </li>
                                 </ul>
                             </div>
