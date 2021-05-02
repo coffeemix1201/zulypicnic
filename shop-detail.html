@@ -393,7 +393,7 @@
                                                         <option value="">- Select Number of Guests -</option>
                                                         <option value='1 Guest'> 1 Guest</option>
                                                         <option value='2 Guests'> 2 Guests</option>
-                                                        <option value='4 Guests'> 4 Guests for additional $25</option>
+                                                        <option value='4 Guests'> 4 Guests additional $25</option>
                                                         </select>
                                                     <br><br>
 
@@ -503,7 +503,7 @@
                                                     <br><br>
 
                                                     <input type="checkbox" id="Charcuterie" name="Charcuterie" value="Yes">
-                                                    <label for="Charcuterie"> Charcuterie Board for 2 $55/each</label><br>
+                                                    <label for="Charcuterie"> Charcuterie Board for 2-4 $55/each</label><br>
 
                                                     <select name="Quantity_Charcuterie" id='Quantity_Charcuterie'>
                                                         <option value="None">- Select Number of Charcuterie Boards -</option>
@@ -513,7 +513,7 @@
                                                     <br><br>
 
                                                     <input type="checkbox" id="Vegan" name="Vegan_Board" value="Yes">
-                                                    <label for="Vegan"> Vegan Board for 2 $55/each</label><br>
+                                                    <label for="Vegan"> Vegan Board for 2-4 $55/each</label><br>
 
                                                     <select name="Quantity_Vegan_Board" id='Quantity_Vegan'>
                                                         <option value="None">- Select Number of Vegan Boards -</option>
@@ -738,85 +738,283 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="box text-uppercase mt-0 mb-small">
-                                                <h3> ADD-ON Gallery</h3>
-                                            </div>
+                                    <div class="col-md-12">
+                                        <div class="heading">
+                                            <h2>ADD-ON GALLERY</h2>
                                         </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/Macaroons2.JPEG" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5">Large Assorted Sweet Box</h3>
-                                                    <!-- <p class="price">$20</p>
-                                        <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/Charcuterie1.JPEG" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5">Charcuterie Board </h3>
-                                                    <!-- <p class="price">$35</p>
-                                        <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/Bouquet1.JPEG" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5">Roses</h3>
-                                                    <!-- <p class="price">$80</p> -->
-                                                    <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="lead"></p>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6">
-                                            <!-- <div class="box text-uppercase mt-0 mb-small">
-                                    <h3>Products viewed recently</h3>
-                                </div> -->
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/cake1.JPEG" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5">Mini Custome Cake</h3>
-                                                    <!-- <p class="price">$143</p> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/Strawberries.jpg" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5"> Chocolate Covered Strawberries</h3>
-                                                    <!-- <p class="price">$143</p> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6">
-                                            <div class="product">
-                                                <div class="image">
-                                                    <img src="img/Fruit.JPEG" alt="" class="img-fluid image1">
-                                                </div>
-                                                <div class="text">
-                                                    <h3 class="h5">Vegan Board</h3>
-                                                    <!-- <p class="price">$143</p> -->
+
+                                    <div id="content">
+                                        <div class="container">
+                                            <div class="bar">
+                                                <div class="row portfolio text-center">
+
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/Bouquet1.JPEG" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                            <div class="content">
+                                                                <div class="name">
+                                                                    <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p class="d-none d-sm-block"></p>
+                                                                    <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Roses</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/sweets.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                            <div class="content">
+                                                                <div class="name">
+                                                                    <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p class="d-none d-sm-block"></p>
+                                                                    <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Large Assorted Sweet Box</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/food.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                            <div class="content">
+                                                                <div class="name">
+                                                                    <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                                </div>
+                                                                <div class="text">
+                                                                    <p class="d-none d-sm-block"></p>
+                                                                    <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Charcuterie Board</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/sweets2.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Assorted Sweet Box in Small, Medium and Large</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/cake3.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Mini Cake</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/bbday.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Large Assorted Sweet Box</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/veggie.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Vegan Board</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/sweetie.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Assorted Sweet Box</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/multisweet.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Small and Medium Assorted Sweet Box</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/heartcake.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Heart Cake</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/numbercake.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Number Cake</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="box-image">
+                                                            <div class="image"><img src="img/lettercake.jpeg" alt="" class="img-fluid">
+                                                                <!-- <div class="overlay d-flex align-items-center justify-content-center">
+                                                        <div class="content">
+                                                            <div class="name">
+                                                                <h3><a href="portfolio-detail.html" class="color-white"></a></h3>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p class="d-none d-sm-block"></p>
+                                                                <p class="buttons"><a href="portfolio-detail.html" class="btn btn-template-outlined-white"></a><a href="#" class="btn btn-template-outlined-white"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                            </div>
+                                                            <div class="text">
+                                                                <h3 class="h5">Letter Cake</h3>
+                                                                <!-- <p class="price">$80</p> -->
+                                                                <!-- <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
